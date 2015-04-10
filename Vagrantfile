@@ -47,6 +47,7 @@ Vagrant.configure("2") do |config|
 
   # Install latest docker & provision it
   config.vm.provision "docker" do |d|
+    # TODO: need to figure out how to run these lines!!
     # d.inline "docker stop $(docker ps -a -q)"
     # d.inline "docker rm $(docker ps -a -q)"
 
