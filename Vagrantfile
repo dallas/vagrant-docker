@@ -1,3 +1,7 @@
+unless ARGV.include?("--no-parallel")
+  raise "must run with the --no-parallel option!"
+end
+
 ENV["VAGRANT_DEFAULT_PROVIDER"] = "docker"
 DOCKER_HOST_NAME                = "docker-host"
 DOCKER_HOST_VAGRANTFILE         = "./docker/Vagrantfile"
