@@ -1,4 +1,4 @@
-unless ARGV.include?("--no-parallel")
+if ARGV[0] == "up" && !ARGV.include?("--no-parallel")
   raise "must run with the --no-parallel option!"
 end
 
